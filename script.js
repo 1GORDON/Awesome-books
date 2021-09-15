@@ -31,30 +31,29 @@ function codeForSingleBook(book){
             <hr>`;
 }
 
-var titleInput = document.getElementById("title");
-var authorInput = document.getElementById("author");
-
+const titleInput = document.getElementById('title');
+const authorInput = document.getElementById('author');
 document
-  .getElementById("book-list")
-  .addEventListener("submit", function(event){
+  .getElementById('book-list')
+  .addEventListener('submit', (event) => {
     event.preventDefault();
-    var bookItems = getFromLocalStorage("bookItems");
-    if(bookItems == null){
-    bookItems = [];
+    let bookItems = getFromLocalStorage('bookItems');
+    if (bookItems == null) {
+      bookItems = [];
     }
-    var title = titleInput.value.trim();
-    var author = authorInput.value.trim();
-    var id = 1;
-    if(bookItems.length > 0){
-        id = bookItems[bookItems.length - 1].id + 1;
+    const title = titleInput.value.trim();
+    const author = authorInput.value.trim();
+    let id = 1;
+    if (bookItems.length > 0) {
+      id = bookItems[bookItems.length - 1].id + 1;
     }
-    if(!title || !author){
+    if (!title || !author) {
       return;
     }
     bookItems.push({
-      id: id,  
-      title: title,
-      author: author
+      id,
+      title,
+      author,
     });
     saveToLocalStorage("bookItems", bookItems);
     displayBooks();
