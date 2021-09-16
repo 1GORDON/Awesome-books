@@ -1,12 +1,8 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+Refactored the Awesome books with the class and it's methods.
 
-# Awesome books
-
-Created functions that save book items to the local storage and display them in the browser
-
-- Created a function that adds books to the local storage
-- Created a function that gets books from the local storage
-- Created a function that displays books in the web browser
+- Created a class method that adds books to the local storage
+- Created a class method that gets books from the local storage
+- Created a class method that displays books in the web browser
 
 ## Built With
 
