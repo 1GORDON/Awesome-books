@@ -1,6 +1,5 @@
-
 function displayBooks() {
-  let bookItems = Book.getAllBooks();
+  const bookItems = Book.getAllBooks();
 
   const booksCode = bookItems.map((book) => new Book(book.title, book.author, book.id).getCode());
   document.getElementById('items').innerHTML = booksCode.join('');
@@ -23,16 +22,15 @@ document
   .getElementById('book-list')
   .addEventListener('submit', (event) => {
     event.preventDefault();
-    let bookItems = Book.getAllBooks();
+    const bookItems = Book.getAllBooks();
     const title = titleInput.value.trim();
     const author = authorInput.value.trim();
-
 
     if (!title || !author) {
       return;
     }
 
-    let book = new Book(title, author);
+    const book = new Book(title, author);
     Book.add(book);
     displayBooks();
   });
