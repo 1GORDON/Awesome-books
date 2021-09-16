@@ -1,3 +1,4 @@
+/* eslint-disable */
 function displayBooks() {
   const bookItems = Book.getAllBooks();
 
