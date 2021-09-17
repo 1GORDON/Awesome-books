@@ -11,14 +11,29 @@
   <title>Awesome books</title>
 </head>
 <body>
-  <div class="header-container">
-  <h1 class="heading">All Awesome books</h1>
+  <header>
+   <nav>
+     <a class="logo" href="index.html">Awesome books</a>
+     <ul class="nav-ul">
+       <li><a class="#" id="id-list">List</a></li>
+       <li><a class="#" id="book-new">Add new</a></li>
+       <li><a class="#" id="id-contact">Contact</a></li>
+     </ul>
+   </nav>
+  </header>
+
+  <div class="time-class">
+    <p id="times">Time</p>
   </div>
-    <div class="books-container">
-      <table class="table-container" id="items"></table>
-    </div>
-    <div class="hr-container">
-    <hr>
+
+    <div class="header-container">
+      <h1 class="heading">All Awesome books</h1>
+      <div class="books-container">
+        <table class="table-container" id="items"></table>
+      </div>
+      <div class="hr-container">
+      <hr>
+      </div>
     </div>
 
     <form class="the-form" id="book-list">
@@ -31,6 +46,18 @@
         <button type="submit" id="btn">Add</button>
       </div>
     </form>
+
+    <div class="contact-class">
+      <h1 class="heading">Contact Information</h1> 
+      <p>Do you have any questions or you just want to say "Hello"?<br> You can reach out to us</p>
+      <ul class="contact-ul">
+        <li>Our emmail: email@email.com</li>
+        <li>Our phone number: 078863643773</li>
+        <li>Our Address: Najjera, Kampala, uganda</li>
+      </ul>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/luxon@2.0.2/build/global/luxon.min.js"></script>
   <script src="Book.js"></script>
   <script src="script.js"></script>
 </body>
