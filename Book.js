@@ -12,10 +12,10 @@ class Book {
   }
 
   getCode() {
-    return `<div>${this.title}</div>
-              <div>${this.author}</div>
-              <button class='remove' data-id='${this.id}'>Remove</button>
-              <hr>`;
+    return `<tr>
+              <td>${this.title} by ${this.author}</td>
+              <td><button class='remove' data-id='${this.id}'>Remove</button></td>
+            </tr>`;
   }
   
   //For every book you  need it own code. For all static methods. You can call without the need to instatiate the object

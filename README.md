@@ -2,11 +2,9 @@
 
 # Awesome books
 
-Created functions that save book items to the local storage and display them in the browser
+Added styles to the Awesome books applicaticon
 
-- Created a function that adds books to the local storage
-- Created a function that gets books from the local storage
-- Created a function that displays books in the web browser
+- Personalised the styles
 
 ## Built With
 
