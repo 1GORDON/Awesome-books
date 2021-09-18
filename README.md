@@ -2,7 +2,7 @@ Refactored the Awesome books with the class and it's methods.
 
 # Awesome books
 
-Added styles to the Awesome books applicaticon
+Added Navigation to Awesome books SPA
 
 ## Built With
 

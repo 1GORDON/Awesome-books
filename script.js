@@ -35,3 +35,37 @@ document
     Book.add(book);
     displayBooks();
   });
+
+const listElement = document.getElementById('id-list');
+const formElement = document.getElementById('book-new');
+const contactElement = document.getElementById('id-contact');
+const listBody = document.querySelector('.header-container');
+const formBody = document.querySelector('.the-form');
+const contactBody = document.querySelector('.contact-class');
+
+// Javascript uses the DOM to manipulate the html. All these methods are from the DOM.
+listElement.addEventListener('click', (event) => {
+  listBody.style.display = 'block';
+  formBody.style.display = 'none';
+  contactBody.style.display = 'none';
+});
+
+formElement.addEventListener('click', (event) => {
+  formBody.style.display = 'block';
+  listBody.style.display = 'none';
+  contactBody.style.display = 'none';
+});
+
+contactElement.addEventListener('click', (event) => {
+  contactBody.style.display = 'flex';
+  listBody.style.display = 'none';
+  formBody.style.display = 'none';
+});
+
+/* eslint-disable */
+window.addEventListener('load', () => {
+  const { DateTime } = luxon;
+  this.today = DateTime.now();
+  document.getElementById('times').textContent = this.today.toLocaleString(DateTime.DATETIME_MED);    
+});
+/* eslint-enable */
