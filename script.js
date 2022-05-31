@@ -62,6 +62,7 @@ contactElement.addEventListener('click', (event) => {
   formBody.style.display = 'none';
 });
 
+/* global luxon, luxon */
 window.addEventListener('load', () => {
   const { DateTime } = luxon;
   this.today = DateTime.now();
