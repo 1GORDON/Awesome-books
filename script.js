@@ -1,4 +1,4 @@
-const Book = require('Book');
+import Book from './Book';
 
 function displayBooks() {
   const bookItems = Book.getAllBooks();
