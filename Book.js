@@ -42,3 +42,5 @@ class Book {
     return bookItems;
   }
 }
+
+module.exports = Book

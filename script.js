@@ -1,3 +1,5 @@
+const Book = require('Book');
+
 function displayBooks() {
   const bookItems = Book.getAllBooks();
 
@@ -63,5 +65,5 @@ contactElement.addEventListener('click', (event) => {
 window.addEventListener('load', () => {
   const { DateTime } = luxon;
   this.today = DateTime.now();
-  document.getElementById('times').textContent = this.today.toLocaleString(DateTime.DATETIME_MED);    
+  document.getElementById('times').textContent = this.today.toLocaleString(DateTime.DATETIME_MED);
 });
