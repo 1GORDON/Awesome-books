@@ -1,5 +1,3 @@
-import Book from './Book';
-
 function displayBooks() {
   const bookItems = Book.getAllBooks();
 
